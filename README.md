@@ -1,3 +1,3 @@
-# Determinant-solver
+# Matrix-calculator
 
-Solves determinants. I may do something with Cramer's rule.
+Solves matrixes. Will add Determinants and Cramer's rule soon.
