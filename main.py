@@ -1,5 +1,4 @@
-def solve():
- pass
+import numpy as np
 def start():
   '''
   while True:
@@ -16,19 +15,20 @@ def start():
   return Question2
   '''
   row = 3
-  column = 3
   for i in range(0,row):
-    a = 1
-    b = 1
-    c = 1
-    d = 1
-    e = 1
-    f = 1
-    g = 1
-    h = 1
-    i = 1
-    A = [[a,b,c], [d,e,f], [g,h,i]]
-    if len(A) == column:
-      break
-  return A 
+    x = 1
+    y = 1
+    z = 1
+    c1 = 0
+    x2 = 1
+    y2 = 1
+    z2 = 1
+    c2 = 0
+    x3 = 1
+    y3 = 1
+    z3 = 1
+    c3 = 0
+    matrix = np.array([[x,y,z,c1], [x2,y2,z2,c2], [x3,y3,z3,c3]])
+  return matrix 
 start()
+
