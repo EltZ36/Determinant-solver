@@ -1,7 +1,7 @@
 import numpy as np
 
 def Calculator():
-  Question = int(input("Which option do you want to do? \n Addition (1) Multiplication (2) Division (3) Find Determinant(4)"))
+  Question = int(input("Which option do you want to do? \n (1) Addition (2) Multiplication (3) Find Determinant"))
   rows = int(input("\nHow many rows?"))
   columns = int(input("\nHow many columns?"))
   print("Fill in the matrix below")
