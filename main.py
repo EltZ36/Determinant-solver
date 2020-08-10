@@ -26,4 +26,19 @@ def Calculator():
     Calculator()
 Calculator()
 
+def Determinant():
+  row1 = 2
+  print("Fill in the 1st row below.")
+  Array = input().split()
+  Fill_in = list(map(int, Array))
+  M1 = np.array(Fill_in).reshape(row1)
+  row2 = 2 
+  print("Fill in the 2nd row below.")
+  Array2 = input().split()
+  Fill_in = list(map(int,Array2))
+  M2 = np.array(Fill_in).reshape(row2)
+  ad = M1[0] * M2[1]
+  bc = M1[1] * M2[0]
+  print(ad - bc)
+Determinant()
 
