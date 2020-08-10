@@ -21,8 +21,6 @@ def Calculator():
     print(Mult)
   elif Question == 3:
     pass
-  elif Question == 4:
-    pass
   else:
     print("Please put in the number next to the option you want.")
     Calculator()
