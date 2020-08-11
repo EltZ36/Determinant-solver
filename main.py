@@ -1,7 +1,7 @@
 import numpy as np
 
 def Calculator():
-  Question = int(input("Which option do you want to do? \n (1) Addition (2) Multiplication (3) Find Determinant"))
+  Question = int(input("Which option do you want to do? \n (1) Addition or (2) Multiplication))
   rows = int(input("\nHow many rows?"))
   columns = int(input("\nHow many columns?"))
   print("Fill in the matrix below")
@@ -40,5 +40,13 @@ def Determinant():
   ad = M1[0] * M2[1]
   bc = M1[1] * M2[0]
   print(ad - bc)
-Determinant()
+                       
+def Start():
+  Option = int(input("Calculator (1) or Solve a 2 by 2 Determinant? (2)"))
+  if Option == 1:
+    Calculator()
+  elif Option == 2:
+    Determinant()
+  else:
+    Option()  
 
