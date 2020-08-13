@@ -24,7 +24,6 @@ def Calculator():
   else:
     print("Please put in the number next to the option you want.")
     Calculator()
-Calculator()
 
 def Determinant():
   row1 = 2
@@ -42,7 +41,13 @@ def Determinant():
   print(ad - bc)
                        
 def Start():
-  Option = int(input("Calculator (1) or Solve a 2 by 2 Determinant? (2)"))
+  try:
+    Option = int(input("Calculator (1) or Solve a 2 by 2 Determinant? (2)"))
+  except ValueError:
+    print("Not an int, please type again."
+    continue
+  else:
+    break
   if Option == 1:
     Calculator()
   elif Option == 2:
