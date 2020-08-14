@@ -41,6 +41,9 @@ def Determinant():
   print(ad - bc)
                        
 def Start():
+  dictonary = {
+    1: Calculator, 2: Determinant 
+  }
   try:
     Option = int(input("Calculator (1) or Solve a 2 by 2 Determinant? (2)"))
   except ValueError:
