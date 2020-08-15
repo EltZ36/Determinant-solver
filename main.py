@@ -41,20 +41,19 @@ def Determinant():
   print(ad - bc)
                        
 def Start():
+   Question = "Calculator (1) or Solve a 2 by 2 Determinant? (2)"
+  print(Question)
   dictonary = {
-    1: Calculator, 2: Determinant 
+    "1":Calculator, "2":Determinant 
   }
-  try:
-    Option = int(input("Calculator (1) or Solve a 2 by 2 Determinant? (2)"))
-  except ValueError:
-    print("Not an int, please type again."
-    continue
-  else:
-    break
-  if Option == 1:
-    Calculator()
-  elif Option == 2:
-    Determinant()
-  else:
-    Option()  
+  while True:
+    try:
+      Option = input("Please select a number:")
+      dictonary[Option]()
+    except KeyError:
+      print("Please type in the number again.")
+      continue
+    else:
+      break
+Start()
 
