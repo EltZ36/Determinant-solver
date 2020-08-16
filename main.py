@@ -1,7 +1,7 @@
 import numpy as np
 
 def Calculator():
-  Question = int(input("Which option do you want to do? \n (1) Addition or (2) Multiplication))
+  Question = int(input("Which option do you want to do? \n (1) Addition, (2) Multiplication or (3) Subtraction))
   rows = int(input("\nHow many rows?"))
   columns = int(input("\nHow many columns?"))
   print("Fill in the matrix below")
@@ -20,7 +20,8 @@ def Calculator():
     Mult = A.dot(B)
     print(Mult)
   elif Question == 3:
-    pass
+    Sub = np.subtract(A, B)
+    print(Sub)
   else:
     print("Please put in the number next to the option you want.")
     Calculator()
