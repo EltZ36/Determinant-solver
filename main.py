@@ -26,7 +26,7 @@ def Calculator():
     print("Please put in the number next to the option you want.")
     Calculator()
 
-def Determinant():
+def two_Determinant():
   row1 = 2
   print("Fill in the 1st row below.")
   Array = input().split()
@@ -40,12 +40,20 @@ def Determinant():
   ad = M1[0] * M2[1]
   bc = M1[1] * M2[0]
   print(ad - bc)
+
+def three_Determinant():
+  row1 = 3
+  print("Fill in the 1st row")
+  row2 = 3
+  print("Fill in the 2nd row")
+  row3 = 3 
+  print("Fill in the 3rd row")   
                        
 def Start():
-   Question = "Calculator (1) or Solve a 2 by 2 Determinant? (2)"
+  Question = "Calculator (1) \nSolve the determinant of a 2x2 matrix? (2) \nSolve the determinant of a 3x3 matrix?"
   print(Question)
   dictonary = {
-    "1":Calculator, "2":Determinant 
+    "1":Calculator, "2":two_Determinant, "3":three_Determinant
   }
   while True:
     try:
