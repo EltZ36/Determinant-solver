@@ -43,11 +43,32 @@ def two_Determinant():
 
 def three_Determinant():
   row1 = 3
-  print("Fill in the 1st row")
   row2 = 3
+  row3 = 3
+  print("Fill in the 1st row")
+  # a much more condensed version of the previous one on lines 33-34
+  Array = list (map (int, input().strip().split()))
+  M1 = np.array(Array).reshape(row1)
   print("Fill in the 2nd row")
-  row3 = 3 
+  Array2 = list (map(int, input().strip().split()))
+  M2 = np.array(Array2).reshape(row2)
   print("Fill in the 3rd row")   
+  Array3 = list(map(int, input().strip().split()))
+  M3 = np.array(Array3).reshape(row3)
+  '''
+  These variables are to solve the determinant and kind of go into the matrix like this:
+  [a b c 
+   d e f 
+   g h i] except a is M1[0], b is M1[1], and c is M1[2]
+  '''
+  ei = M2[1]*M3[2]
+  fh = M2[2]*M3[1]
+  di = M2[0]*M3[2]
+  fg = M2[2]*M3[0]
+  dh = M2[0]*M3[1]
+  eg = M3[0]*M2[1]
+  Determinant = ((M1[0]*(ei - fh))-(M1[1]*(di-fg))+(M1[2]*(dh-eg)))
+  print(Determinant)
                        
 def Start():
   Question = "Calculator (1) \nSolve the determinant of a 2x2 matrix? (2) \nSolve the determinant of a 3x3 matrix?"
