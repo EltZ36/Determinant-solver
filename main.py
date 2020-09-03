@@ -1,7 +1,7 @@
 import numpy as np
 
 def Calculator():
-  Question = int(input("Which option do you want to do? \n (1) Addition, (2) Multiplication or (3) Subtraction))
+  Question = int(input("Which option do you want to do? \n Addition (1) \n Multiplication (2) \nSubtraction (3)))
   rows = int(input("\nHow many rows?"))
   columns = int(input("\nHow many columns?"))
   print("Fill in the matrix below")
@@ -71,7 +71,7 @@ def three_Determinant():
   print(Determinant)
                        
 def Start():
-  Question = "Calculator (1) \nSolve the determinant of a 2x2 matrix? (2) \nSolve the determinant of a 3x3 matrix?"
+  Question = "Calculator (1) \nSolve the determinant of a 2x2 matrix? (2) \nSolve the determinant of a 3x3 matrix?" (3)
   print(Question)
   dictonary = {
     "1":Calculator, "2":two_Determinant, "3":three_Determinant
