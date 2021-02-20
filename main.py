@@ -23,7 +23,7 @@ def Calculator():
     Sub = np.subtract(A, B)
     print(Sub)
   else:
-    print("Please put in the number next to the option you want.")
+    print("Please put in the number next to the option you want again.")
     Calculator()
 
 def two_matrix():
