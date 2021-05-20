@@ -37,8 +37,8 @@ def two_matrix():
   Array2 = input().split()
   Fill_in = list(map(int,Array2))
   M2 = np.array(Fill_in).reshape(row2)
-  ad = M1[0] * M2[1]
-  bc = M1[1] * M2[0]
+  ad = (M1[0] * M2[1])
+  bc = (M1[1] * M2[0])
   print(ad - bc)
 
 def three_matrix():
@@ -61,12 +61,12 @@ def three_matrix():
    d e f 
    g h i] except a is M1[0], b is M1[1], and c is M1[2]
   '''
-  ei = M2[1]*M3[2]
-  fh = M2[2]*M3[1]
-  di = M2[0]*M3[2]
-  fg = M2[2]*M3[0]
-  dh = M2[0]*M3[1]
-  eg = M3[0]*M2[1]
+  ei = (M2[1]*M3[2])
+  fh = (M2[2]*M3[1])
+  di = (M2[0]*M3[2])
+  fg = (M2[2]*M3[0])
+  dh = (M2[0]*M3[1])
+  eg = (M3[0]*M2[1])
   Determinant = ((M1[0]*(ei - fh))-(M1[1]*(di-fg))+(M1[2]*(dh-eg)))
   print(Determinant)
                        
