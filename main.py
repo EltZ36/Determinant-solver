@@ -6,7 +6,10 @@ def Calculator():
   columns = int(input("\nHow many columns?"))
   print("Fill in the matrix below")
   Array = input().split()
-  #list() creates an empty list and map runs the int function with the arguments of the input of rows and columns. the list cannot go over the inputed amount of rows or columns. Ex. I put 2 rows in the input and 2 columns in the input as well. When I fill in the matrix, I can't put in 3 rows and 1 column. 
+  '''list() creates an empty list and map runs the int function with the arguments of the input of rows and columns. 
+  The list cannot go over the inputed amount of rows or columns. 
+  For example, if I put 2 rows in the input and 2 columns in the input and when I fill in the matrix, I can't put in 3 rows and 1 column. 
+  '''
   Fill_in = list(map(int, Array))
   A = np.array(Fill_in).reshape(rows, columns)
   print("Fill in the second matrix below with " + str(rows) +" row(s) and "+ str(columns)+" column(s)")
